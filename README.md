@@ -21,3 +21,15 @@ npm run wp-env start
 ``` 
 
 This will start a few Docker containers (WordPress, MySQL, ...) listening to specific ports that we can use to access these related services
+
+We should be able to access to the dashboard panel of the WordPress installation at `http://localhost:8888/wp-admin` (user: admin, password: password)
+
+From the plugin folder (`plugins/react-wp-data-example`) we can generate the `build` folder by doing
+
+```
+npm run build
+```
+
+Or we can execute `npm start` to launch a watching process that will generate the `build` folder every time changes are detected under the `src` folder
+
+
